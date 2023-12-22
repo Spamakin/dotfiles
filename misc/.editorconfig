@@ -1,0 +1,31 @@
+# I hate that this file exists but Emacs indentation managment is a pain in the ass
+
+# If there are any config files beyond here, they shouldn't exist
+root = true
+
+# These are settings for literally every unspecified file
+# RULES ARE READ TOP TO BOTTOM
+[*]
+indent_size = 2
+indent_style = space
+insert_final_newline = true
+trim_trailing_whitespace = true
+charset = utf-8
+
+[*.cpp]
+indent_size = 2
+
+[*.tex]
+indent_size = 2
+
+[*.bib]
+indent_size = 2
+
+[*.py]
+indent_size = 4
+
+[*.sage]
+indent_size = 4
+
+[*.g]
+indent_size = 2
