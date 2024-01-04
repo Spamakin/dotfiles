@@ -138,10 +138,6 @@ export PATH=/usr/local/texlive/2022/bin/x86_64-linux/:$PATH
 # https://cryptohack.org/faq/#install
 alias cryptohack_docker='sudo docker run -p 127.0.0.1:8888:8888 -it hyperreality/cryptohack:latest'
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
 # WIP Todo-Tree Function using ripgrep because ripgrep is faster I think?
 # https://github.com/BurntSushi/ripgrep
 # How ironic it has it's own todos
