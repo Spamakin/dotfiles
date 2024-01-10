@@ -33,7 +33,7 @@
 ;; available. You can either set `doom-theme' or manually load a theme with the
 ;; `load-theme' function. This is the default:
 (setq doom-theme 'doom-one
-      doom-font (font-spec :family "JuliaMono"))
+      doom-font (font-spec :family "JuliaMono" :size 19))
 
 
 (when (display-graphic-p)
