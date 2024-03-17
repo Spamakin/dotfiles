@@ -132,9 +132,6 @@ export PATH=$PATH:$HOME/.cabal/bin/
 # add Amazon Corretto JDK 11 to path
 export PATH=$HOME/amazon-corretto-11.0.16.8.1-linux-x64/bin:$PATH
 
-# add tex to path
-export PATH=/usr/local/texlive/2022/bin/x86_64-linux/:$PATH
-
 # https://cryptohack.org/faq/#install
 alias cryptohack_docker='sudo docker run -p 127.0.0.1:8888:8888 -it hyperreality/cryptohack:latest'
 
@@ -173,9 +170,9 @@ export LD_LIBRARY_PATH="${LD_LIBRARY_PATH}:${GUROBI_HOME}/lib"
 export PATH=$PATH:/usr/local/go/bin
 
 # I would like to do math
-export PATH=/usr/local/texlive/2023/bin/x86_64-linux:$PATH
-export MANPATH=/usr/local/texlive/2023/texmf-dist/doc/man:$MANPATH
-export INFOPATH=/usr/local/texlive/2023/texmf-dist/doc/info:$INFOPATH
+export PATH=/usr/local/texlive/2024/bin/x86_64-linux:$PATH
+export MANPATH=/usr/local/texlive/2024/texmf-dist/doc/man:$MANPATH
+export INFOPATH=/usr/local/texlive/2024/texmf-dist/doc/info:$INFOPATH
 
 # *space noises*
 eval "$(starship init bash)"
