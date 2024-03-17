@@ -29,3 +29,6 @@ indent_size = 4
 
 [*.g]
 indent_size = 2
+
+[*.org]
+indent_size = 8
