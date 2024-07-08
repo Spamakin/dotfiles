@@ -147,4 +147,4 @@
 (editorconfig-mode 1)
 
 ;; ;; GAP
-;; (setq gap-executable "/usr/bin/gap")
+(setq gap-executable "/home/spamakin/gap-4.13.0/gap")
