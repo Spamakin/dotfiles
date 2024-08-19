@@ -55,4 +55,4 @@
 (package! grip-mode)
 (package! sage-shell-mode)
 (package! all-the-icons)
-(package! gap-mode)
+; (package! gap-mode)
