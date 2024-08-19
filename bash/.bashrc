@@ -181,3 +181,7 @@ eval "$(starship init bash)"
 
 # Make GPG play nice
 export GPG_TTY=$(tty)
+
+# # Add sage to path
+# export SAGE_ROOT="sage/sage-10.4"
+# export PATH=$PATH:$SAGE_ROOT/
