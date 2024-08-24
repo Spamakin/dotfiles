@@ -75,6 +75,12 @@ xterm*|rxvt*)
     ;;
 esac
 
+# basic aliases
+alias ls='ls --classify'
+alias cp='cp -i'
+alias less='less --quit-if-one-screen --ignore-case --no-init'
+alias mv='mv -i'
+
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
