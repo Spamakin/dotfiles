@@ -116,9 +116,8 @@
     (split-window-horizontally)
     (+vterm/here default-directory)))
 
-;; vsplit vterm when vterm is already open
-(map! :map vterm-mode-map
-      "C-x 3" #'vterm/split-right)
+;; dired will kill buffers as you open directories
+(setq dired-kill-when-opening-new-dired-buffer t)
 
 ;; LaTeX doc-view
 (setq doc-view-resolution 200)
