@@ -126,10 +126,10 @@
 (setq tex-fontify-script nil)
 (setq font-latex-fontify-script nil)
 
-(after! tex
-  (remove-hook 'TeX-update-style-hook #'rainbow-delimiters-mode))
+;; (after! tex
+;;   (remove-hook 'TeX-update-style-hook #'rainbow-delimiters-mode))
 
-(setq +latex-viewers '(pdf-tools sioyek okular ))
+(setq +latex-viewers '(okular))
 
 
 ;; Grip for Markdown rendering
