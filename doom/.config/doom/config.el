@@ -125,6 +125,15 @@
 
 (setq +latex-viewers '(okular))
 
+(defface custom-latex-quest-face
+  '((t :foreground "firebrick" :weight bold)) ; can add more properties
+  "Face for highlighting \\quest{} in LaTeX."
+  :group 'custom-faces)
+
+(font-lock-add-keywords
+ 'LaTeX-mode
+ '(("\\\\quest{.*}" . 'custom-latex-quest-face)))
+
 ;; Grip for Markdown rendering
 (setq grip-github-user "Spamakin")
 (setq grip-update-after-change nil)
