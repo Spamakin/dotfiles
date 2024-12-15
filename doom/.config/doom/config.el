@@ -119,15 +119,11 @@
 ;; dired will kill buffers as you open directories
 (setq dired-kill-when-opening-new-dired-buffer t)
 
-;; LaTeX doc-view
-(setq doc-view-resolution 200)
-
 ;; Disable weird LaTeX sub/superscript rendering
 (setq tex-fontify-script nil)
 (setq font-latex-fontify-script nil)
 
 (setq +latex-viewers '(okular))
-
 
 ;; Grip for Markdown rendering
 (setq grip-github-user "Spamakin")
@@ -135,9 +131,6 @@
 
 ;; Modeline settings
 (setq doom-modeline-buffer-file-name-style 'buffer-name)
-
-;; disable flyspell-mode
-(setq-default spell-checking-enable-by-default nil)
 
 ;; Emacs indentation is god-awful to the point that we need an external config
 (editorconfig-mode 1)
