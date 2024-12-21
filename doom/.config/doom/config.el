@@ -132,7 +132,7 @@
 
 (font-lock-add-keywords
  'LaTeX-mode
- '(("\\\\quest{.*}" . 'custom-latex-quest-face)))
+ '(("\\\\quest{.*?}" . 'custom-latex-quest-face)))
 
 ;; Grip for Markdown rendering
 (setq grip-github-user "Spamakin")
