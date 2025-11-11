@@ -26,3 +26,6 @@ if [ -d "$HOME/.local/bin" ] ; then
     PATH="$HOME/.local/bin:$PATH"
 fi
 . "$HOME/.cargo/env"
+
+# uv
+export PATH="/home/anakin/.local/bin:$PATH"
