@@ -76,7 +76,7 @@ xterm*|rxvt*)
 esac
 
 # basic aliases
-alias ls='ls --classify'
+# alias ls='ls --classify'
 alias cp='cp -i'
 alias less='less --quit-if-one-screen --ignore-case --no-init'
 alias mv='mv -i'
