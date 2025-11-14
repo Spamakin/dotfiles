@@ -198,3 +198,5 @@ export NVM_DIR="$HOME/.nvm"
 
 # uv
 export PATH="/home/anakin/.local/bin:$PATH"
+
+. "$HOME/.local/bin/env"

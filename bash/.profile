@@ -29,3 +29,5 @@ fi
 
 # uv
 export PATH="/home/anakin/.local/bin:$PATH"
+
+. "$HOME/.local/bin/env"
