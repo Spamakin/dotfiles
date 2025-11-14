@@ -52,7 +52,5 @@
 (package! shell-pop)
 (package! evil-tutor)
 (package! markdown-mode)
-(package! grip-mode)
 (package! sage-shell-mode)
 (package! all-the-icons)
-; (package! gap-mode)

@@ -94,36 +94,12 @@
 ;; Remove shortcuts on splashscreen
 (remove-hook '+doom-dashboard-functions #'doom-dashboard-widget-shortmenu)
 
-;; Literate mode for agda go brrrrr
-(add-to-list 'auto-mode-alist '("\\.lagda.md\\'" . agda2-mode))
-
-;; Command to open vterm in a right window
-(defun vterm/split-right ()
-  "Create a new vterm window to the right of the current one."
-  (interactive)
-  (let* ((ignore-window-parameters t)
-         (dedicated-p (window-dedicated-p)))
-    (split-window-horizontally)
-    (other-window 1)
-    (+vterm/here default-directory)))
-
-;; Command to open vterm in a left window
-(defun vterm/split-left ()
-  "Create a new vterm window to the left of the current one."
-  (interactive)
-  (let* ((ignore-window-parameters t)
-         (dedicated-p (window-dedicated-p)))
-    (split-window-horizontally)
-    (+vterm/here default-directory)))
-
 ;; dired will kill buffers as you open directories
 (setq dired-kill-when-opening-new-dired-buffer t)
 
 ;; Disable weird LaTeX sub/superscript rendering
 (setq tex-fontify-script nil)
 (setq font-latex-fontify-script nil)
-
-(setq +latex-viewers '(okular))
 
 (defface custom-latex-quest-face
   '((t :foreground "firebrick" :weight bold)) ; can add more properties
@@ -133,10 +109,6 @@
 (font-lock-add-keywords
  'LaTeX-mode
  '(("\\\\quest{.*?}" . 'custom-latex-quest-face)))
-
-;; Grip for Markdown rendering
-(setq grip-github-user "Spamakin")
-(setq grip-update-after-change nil)
 
 ;; Modeline settings
 (setq doom-modeline-buffer-file-name-style 'buffer-name)
