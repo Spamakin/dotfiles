@@ -92,7 +92,7 @@
 (setq fancy-splash-image (concat doom-private-dir "cacochan.png"))
 
 ;; Remove shortcuts on splashscreen
-(remove-hook '+doom-dashboard-functions #'doom-dashboard-widget-shortmenu)
+(remove-hook '+dashboard-functions #'+dashboard-widget-shortmenu)
 
 ;; dired will kill buffers as you open directories
 (setq dired-kill-when-opening-new-dired-buffer t)
@@ -114,7 +114,7 @@
 (setq doom-modeline-buffer-file-name-style 'buffer-name)
 
 ;; Emacs indentation is god-awful to the point that we need an external config
-(editorconfig-mode 1)
+;;(editorconfig-mode 1)
 
 ;; ;; GAP
 ;; (setq gap-executable "/home/spamakin/gap-4.13.0/gap")
