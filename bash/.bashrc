@@ -200,3 +200,18 @@ export NVM_DIR="$HOME/.nvm"
 export PATH="/home/anakin/.local/bin:$PATH"
 
 . "$HOME/.local/bin/env"
+
+# >>> juliaup initialize >>>
+
+# !! Contents within this block are managed by juliaup !!
+
+case ":$PATH:" in
+    *:/Users/anakin/.juliaup/bin:*)
+        ;;
+
+    *)
+        export PATH=/Users/anakin/.juliaup/bin${PATH:+:${PATH}}
+        ;;
+esac
+
+# <<< juliaup initialize <<<
