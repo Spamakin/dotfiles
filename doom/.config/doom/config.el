@@ -113,9 +113,6 @@
 ;; Modeline settings
 (setq doom-modeline-buffer-file-name-style 'buffer-name)
 
-;; Emacs indentation is god-awful to the point that we need an external config
-;;(editorconfig-mode 1)
-
 ;; ;; GAP
 ;; (setq gap-executable "/home/spamakin/gap-4.13.0/gap")
 
@@ -127,3 +124,4 @@
             ;; Map U+2000 and U+2001 to a standard space
             (aset standard-display-table #x2000 (vector (make-glyph-code ?\s)))
             (aset standard-display-table #x2001 (vector (make-glyph-code ?\s)))))
+

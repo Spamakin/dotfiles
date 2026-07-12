@@ -12,23 +12,8 @@ insert_final_newline = true
 trim_trailing_whitespace = true
 charset = utf-8
 
-[*.cpp]
-indent_size = 2
-
-[*.tex]
-indent_size = 2
-
-[*.bib]
-indent_size = 2
-
 [*.py]
 indent_size = 4
 
 [*.sage]
 indent_size = 4
-
-[*.g]
-indent_size = 2
-
-[*.org]
-indent_size = 8
