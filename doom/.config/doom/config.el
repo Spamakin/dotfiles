@@ -118,3 +118,12 @@
 
 ;; ;; GAP
 ;; (setq gap-executable "/home/spamakin/gap-4.13.0/gap")
+
+;; Make ghostel play nice with starship
+(add-hook 'ghostel-mode-hook
+          (lambda ()
+            (unless standard-display-table
+              (setq standard-display-table (make-display-table)))
+            ;; Map U+2000 and U+2001 to a standard space
+            (aset standard-display-table #x2000 (vector (make-glyph-code ?\s)))
+            (aset standard-display-table #x2001 (vector (make-glyph-code ?\s)))))
