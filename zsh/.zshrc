@@ -50,3 +50,6 @@ export NVM_DIR="$HOME/.nvm"
 
 # *space noises*
 eval "$(starship init zsh)"
+
+# tectonic / nextonic completions
+eval "$(nextonic show shell-completions zsh)"
